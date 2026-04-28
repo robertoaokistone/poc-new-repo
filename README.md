@@ -22,3 +22,6 @@ para `poc-new-repo` via `legacy-relay`.
 - `.k8s/` — infra específica do legado
 - `.github/workflows/deploy-legacy.yml`
 - `.github/workflows/sync-to-new.yml`
+
+
+## nova sessao 2
