@@ -1,0 +1,5 @@
+# Owners padrão para todos os arquivos
+* @robertoaokistone
+
+# Infra Helm — exclusivo do novo repo
+/charts/ @robertoaokistone

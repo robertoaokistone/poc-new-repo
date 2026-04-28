@@ -1,0 +1,6 @@
+feature_flags:
+  new_checkout: true
+  dark_mode: false
+observability:
+  tracing: enabled
+  metrics: prometheus
