@@ -1,5 +1,5 @@
 # Owners padrão para todos os arquivos
 * @robertoaokistone
 
-# Infra Helm — exclusivo do novo repo
-/charts/ @robertoaokistone
+# Infraestrutura k8s — exclusivo do legado
+/.k8s/ @robertoaokistone
