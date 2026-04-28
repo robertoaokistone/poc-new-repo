@@ -1,15 +1,24 @@
-# poc-new-repo
+# poc-legacy-repo
 
-Repositório novo — destino da migração de `poc-legacy-repo`.
+Repositório legado em processo de migração para `poc-new-repo`.
 
 ## Deploy
 
-Utiliza Helm charts em `./charts/`.
+Utiliza manifests Kubernetes em `.k8s/`.
 
-## Arquivos exclusivos deste repo
+## Migração
 
-- `charts/` — Helm charts (não existem no legado)
-- `new-only-config.yaml` — configurações exclusivas do novo
-- `.github/workflows/deploy-new.yml` — pipeline de deploy com Helm
+Todo merge na `main` sincroniza automaticamente as mudanças elegíveis
+para `poc-new-repo` via `legacy-relay`.
 
-Esses arquivos nunca são sobrescritos pelo sync do legado.
+### O que vai para o novo repo
+
+- `src/` — código da aplicação
+- `.github/CODEOWNERS`
+- `.github/workflows/validate.yml`
+
+### O que fica só no legado
+
+- `.k8s/` — infra específica do legado
+- `.github/workflows/deploy-legacy.yml`
+- `.github/workflows/sync-to-new.yml`
